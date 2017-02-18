@@ -1,2 +1,2 @@
-class Sponsorship < Event
+class Sponsorship < ApplicationRecord
 end
