@@ -1,0 +1,1 @@
+json.partial! "physical_goods/physical_good", physical_good: @physical_good

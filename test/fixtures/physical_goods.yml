@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tshirt_count: 1
+  tshirt_cost: 9.99
+  tshirts_distributed: 1
+  stickers_cost: 9.99
+  other_goods: MyString
+  other_goods_cost: 9.99
+
+two:
+  tshirt_count: 1
+  tshirt_cost: 9.99
+  tshirts_distributed: 1
+  stickers_cost: 9.99
+  other_goods: MyString
+  other_goods_cost: 9.99

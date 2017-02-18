@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hotel name:</strong>
+  <%= @travel.hotel_name %>
+</p>
+
+<p>
+  <strong>Hotel cost per night:</strong>
+  <%= @travel.hotel_cost_per_night %>
+</p>
+
+<p>
+  <strong>Hotel cost total:</strong>
+  <%= @travel.hotel_cost_total %>
+</p>
+
+<p>
+  <strong>Airfare cost total:</strong>
+  <%= @travel.airfare_cost_total %>
+</p>
+
+<p>
+  <strong>Other expenses total:</strong>
+  <%= @travel.other_expenses_total %>
+</p>
+
+<p>
+  <strong>Total travel cost:</strong>
+  <%= @travel.total_travel_cost %>
+</p>
+
+<%= link_to 'Edit', edit_travel_path(@travel) %> |
+<%= link_to 'Back', travels_path %>

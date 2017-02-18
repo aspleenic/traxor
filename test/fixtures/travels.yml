@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hotel_name: MyString
+  hotel_cost_per_night: 9.99
+  hotel_cost_total: 9.99
+  airfare_cost_total: 9.99
+  other_expenses_total: 9.99
+  total_travel_cost: 9.99
+
+two:
+  hotel_name: MyString
+  hotel_cost_per_night: 9.99
+  hotel_cost_total: 9.99
+  airfare_cost_total: 9.99
+  other_expenses_total: 9.99
+  total_travel_cost: 9.99

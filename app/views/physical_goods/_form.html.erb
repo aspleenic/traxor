@@ -1,0 +1,47 @@
+<%= form_for(physical_good) do |f| %>
+  <% if physical_good.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(physical_good.errors.count, "error") %> prohibited this physical_good from being saved:</h2>
+
+      <ul>
+      <% physical_good.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tshirt_count %>
+    <%= f.number_field :tshirt_count %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tshirt_cost %>
+    <%= f.text_field :tshirt_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tshirts_distributed %>
+    <%= f.number_field :tshirts_distributed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stickers_cost %>
+    <%= f.text_field :stickers_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :other_goods %>
+    <%= f.text_field :other_goods %>
+  </div>
+
+  <div class="field">
+    <%= f.label :other_goods_cost %>
+    <%= f.text_field :other_goods_cost %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

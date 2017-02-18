@@ -1,0 +1,2 @@
+json.extract! travel, :id, :hotel_name, :hotel_cost_per_night, :hotel_cost_total, :airfare_cost_total, :other_expenses_total, :total_travel_cost, :created_at, :updated_at
+json.url travel_url(travel, format: :json)

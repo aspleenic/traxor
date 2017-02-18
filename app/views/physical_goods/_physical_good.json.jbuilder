@@ -1,0 +1,2 @@
+json.extract! physical_good, :id, :tshirt_count, :tshirt_cost, :tshirts_distributed, :stickers_cost, :other_goods, :other_goods_cost, :created_at, :updated_at
+json.url physical_good_url(physical_good, format: :json)

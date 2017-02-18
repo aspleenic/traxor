@@ -10,16 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218192613) do
+ActiveRecord::Schema.define(version: 20170218194354) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "physical_goods", force: :cascade do |t|
+    t.integer  "tshirt_count"
+    t.decimal  "tshirt_cost"
+    t.integer  "tshirts_distributed"
+    t.decimal  "stickers_cost"
+    t.string   "other_goods"
+    t.decimal  "other_goods_cost"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
   create_table "sponsorships", force: :cascade do |t|
     t.decimal  "direct_cost"
     t.string   "level_label"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "travels", force: :cascade do |t|
+    t.string   "hotel_name"
+    t.decimal  "hotel_cost_per_night"
+    t.decimal  "hotel_cost_total"
+    t.decimal  "airfare_cost_total"
+    t.decimal  "other_expenses_total"
+    t.decimal  "total_travel_cost"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
 end

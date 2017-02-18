@@ -1,0 +1,2 @@
+class PhysicalGood < ApplicationRecord
+end
