@@ -1,2 +1,2 @@
-class PhysicalGood < ApplicationRecord
+class PhysicalGood < Event
 end

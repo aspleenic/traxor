@@ -1,0 +1,72 @@
+<%= form_for(event) do |f| %>
+  <% if event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :event_name %>
+    <%= f.text_field :event_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_city %>
+    <%= f.text_field :event_city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_country %>
+    <%= f.text_field :event_country %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_location %>
+    <%= f.text_field :event_location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_total_cost %>
+    <%= f.number_field :event_total_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_url %>
+    <%= f.text_field :event_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_tracking_url %>
+    <%= f.text_field :event_tracking_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_sponsorship_cost %>
+    <%= f.number_field :event_sponsorship_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_physical_goods_cost %>
+    <%= f.number_field :event_physical_goods_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_travel_cost %>
+    <%= f.number_field :event_travel_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :event_impact_score %>
+    <%= f.number_field :event_impact_score %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

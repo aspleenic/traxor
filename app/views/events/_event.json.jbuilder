@@ -1,0 +1,2 @@
+json.extract! event, :id, :event_name, :event_city, :event_country, :event_location, :event_total_cost, :event_url, :event_tracking_url, :event_sponsorship_cost, :event_physical_goods_cost, :event_travel_cost, :event_impact_score, :created_at, :updated_at
+json.url event_url(event, format: :json)

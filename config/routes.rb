@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   resources :travels
   resources :physical_goods
   resources :sponsorships

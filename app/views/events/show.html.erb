@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event name:</strong>
+  <%= @event.event_name %>
+</p>
+
+<p>
+  <strong>Event city:</strong>
+  <%= @event.event_city %>
+</p>
+
+<p>
+  <strong>Event country:</strong>
+  <%= @event.event_country %>
+</p>
+
+<p>
+  <strong>Event location:</strong>
+  <%= @event.event_location %>
+</p>
+
+<p>
+  <strong>Event total cost:</strong>
+  <%= @event.event_total_cost %>
+</p>
+
+<p>
+  <strong>Event url:</strong>
+  <%= @event.event_url %>
+</p>
+
+<p>
+  <strong>Event tracking url:</strong>
+  <%= @event.event_tracking_url %>
+</p>
+
+<p>
+  <strong>Event sponsorship cost:</strong>
+  <%= @event.event_sponsorship_cost %>
+</p>
+
+<p>
+  <strong>Event physical goods cost:</strong>
+  <%= @event.event_physical_goods_cost %>
+</p>
+
+<p>
+  <strong>Event travel cost:</strong>
+  <%= @event.event_travel_cost %>
+</p>
+
+<p>
+  <strong>Event impact score:</strong>
+  <%= @event.event_impact_score %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

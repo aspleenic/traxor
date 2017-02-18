@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_name: MyString
+  event_city: MyString
+  event_country: MyString
+  event_location: MyString
+  event_total_cost: 1
+  event_url: MyString
+  event_tracking_url: MyString
+  event_sponsorship_cost: 1
+  event_physical_goods_cost: 1
+  event_travel_cost: 1
+  event_impact_score: 1
+
+two:
+  event_name: MyString
+  event_city: MyString
+  event_country: MyString
+  event_location: MyString
+  event_total_cost: 1
+  event_url: MyString
+  event_tracking_url: MyString
+  event_sponsorship_cost: 1
+  event_physical_goods_cost: 1
+  event_travel_cost: 1
+  event_impact_score: 1
