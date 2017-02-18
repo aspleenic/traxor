@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Direct cost:</strong>
+  <%= @sponsorship.direct_cost %>
+</p>
+
+<p>
+  <strong>Level label:</strong>
+  <%= @sponsorship.level_label %>
+</p>
+
+<%= link_to 'Edit', edit_sponsorship_path(@sponsorship) %> |
+<%= link_to 'Back', sponsorships_path %>
