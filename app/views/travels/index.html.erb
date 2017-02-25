@@ -23,7 +23,7 @@
         <td><%= travel.hotel_cost_total %></td>
         <td><%= travel.airfare_cost_total %></td>
         <td><%= travel.other_expenses_total %></td>
-        <td><%= travel.total_travel_cost %></td>
+        <td><%= travel.hotel_cost_total + travel.airfare_cost_total + travel.other_expenses_total %></td>
         <td><%= link_to 'Show', travel %></td>
         <td><%= link_to 'Edit', edit_travel_path(travel) %></td>
         <td><%= link_to 'Destroy', travel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
