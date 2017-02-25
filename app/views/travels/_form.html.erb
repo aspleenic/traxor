@@ -21,6 +21,11 @@
     <%= f.text_field :hotel_cost_per_night %>
   </div>
 
+  <div>
+    <%= f.label :hotel_number_of_nights %>
+    <%= f.select :hotel_number_of_nights, [1,2,3,4,5,6,7] %>
+  </div>
+
   <div class="field">
     <%= f.label :hotel_cost_total %>
     <%= f.text_field :hotel_cost_total %>

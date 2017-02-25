@@ -69,6 +69,6 @@ class TravelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def travel_params
-      params.require(:travel).permit(:hotel_name, :hotel_cost_per_night, :hotel_cost_total, :airfare_cost_total, :other_expenses_total, :total_travel_cost)
+      params.require(:travel).permit(:hotel_name, :hotel_cost_per_night, :hotel_number_of_nights, :hotel_cost_total, :airfare_cost_total, :other_expenses_total, :total_travel_cost)
     end
 end

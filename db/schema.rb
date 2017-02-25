@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170218200729) do
+ActiveRecord::Schema.define(version: 20170225172225) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,8 +56,9 @@ ActiveRecord::Schema.define(version: 20170218200729) do
     t.decimal  "airfare_cost_total"
     t.decimal  "other_expenses_total"
     t.decimal  "total_travel_cost"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "hotel_number_of_nights"
   end
 
 end
