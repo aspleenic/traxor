@@ -1,5 +1,6 @@
 class Travel < ApplicationRecord
 
+  belongs_to :event
   validates :hotel_number_of_nights, :presence => true
 
   def hotel_cost_total
